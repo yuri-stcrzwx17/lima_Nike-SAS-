@@ -10,56 +10,88 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Nike Tailwind</title>
 </head>
-<body class="w-[697px] h-[1194px] font-[Oswald] relative overflow-hidden">
-    <div class="bg-[#4AE5D3] w-[174px] h-full absolute right-0 top-0 z-10 pt-[103px] pl-[99px]"> 
-        <img class="w-[23px] h-[19px]" src="img/Burger.png" alt="Menu">
-    </div>
-
-    <header class="h-[238px] flex flex-row justify-between items-start relative z-20">
-        <img class="w-[116px] h-[46px] pt-[17px] px-[17px]" src="./Logo_NIKE.svg" alt="Logo Nike">
+<body class="font-[Oswald]">
+    <!-- Header Section -->
+    <header class="h-[20%] flex w-[75%] pt-[30px] gap-[180px] pl-[40px] max-lg:gap-[160px] items-center max-sm:gap-[60px] max-sm:pt-[25px] max-sm:pl-[20px]">
+        <img class="w-auto h-auto max-sm:w-[82px] max-sm:h-[28px]" src="./img/logo-nike.png" alt="Nike Logo">
         
-        <div class="absolute left-1/2 transform -translate-x-1/2 flex gap-3 items-center pt-[17px]">
-            <p class="font-bold text-[24px]">01</p>
-            <button class="bg-black hover:bg-gray-500 py-1 px-2 w-[44px] h-[22px] flex items-center justify-center">
-                <img src="./img/setas.png" alt="setas">
-            </button>
-        </div>
-    </header>
-
-    <main class="h-[776px] flex flex-row relative z-20">
-        <div class="pt-[85px] pl-[17px]">
-            <img class="w-[9px] h-[505px]" src="./Img/bolinhas.png" alt="bolinhas decorativas">
-        </div>
-        
-        <div class="pt-[51px] flex flex-col gap-[273px] pl-[23px]">
-            <div class="flex flex-row gap-[35px] pl-[35px]">
-                <div class="w-[162px] h-[70px]">
-                    <div class="flex gap-2 items-center">
-                        <div class="font-extrabold pt-[6px] w-[104px] h-[1px] bg-black"></div>
-                        <p class="font-bold text-[24px]">OUT</p> 
-                    </div>
-                    <p class="font-bold text-[24px]">OF COMPETITION</p> 
-                </div>
-                <div>
-                    <p class="w-[147px] h-[64px] font-normal text-[12px]">
-                        Stand out with the new Air Zoom G.T. Run, featuring a new cushioning in the heel.
-                    </p>
-                </div>
-            </div>
+        <div class="flex gap-5 items-center w-[35%] justify-end max-lg:flex max-lg:justify-normal max-sm:gap-[5px]">
+            <p class="font-bold text-[41px] max-sm:text-[20px]">01</p>
             
-            <div>
-                <button class="bg-black hover:bg-gray-500 hover:text-black text-white text-[12px] w-[110px] h-[25px] flex gap-1 justify-center items-center">
-                    PRE - ORDER 
-                    <img class="w-[43px] h-[7px]" src="./Img/seta-pre-order.png" alt="seta-pre-order">
+            <!-- Desktop Navigation Buttons -->
+            <button class="bg-black hover:bg-gray-500 py-2 px-4 w-[76px] h-[38px] max-sm:hidden">
+                <img src="./img/setas.png" alt="Navigation arrows">
+            </button>
+            
+            <!-- Mobile Navigation Buttons -->
+            <div class="sm:hidden max-sm:w-[58px] max-sm:h-[17px] flex flex-row gap-[20px]">
+                <button class="bg-black hover:bg-gray-500 max-sm:w-[17px] max-sm:h-[17px] flex justify-center pt-[2px]">
+                    <img class="rotate-180" src="./img/seta-celular.png" alt="Left arrow">
+                </button>
+                <button class="bg-black hover:bg-gray-500 max-sm:w-[17px] max-sm:h-[17px] flex justify-center pt-[2px]">
+                    <img src="./img/seta-celular.png" alt="Right arrow">
                 </button>
             </div>
         </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="bg-[#4AE5D3] text-black w-[25%] absolute pt-[60px] pl-[170px] h-full z-20 right-0 top-0 max-lg:pt-[60px] max-lg:px-[80px] max-sm:pt-[29px] max-sm:px-[35px]">
+        <img class="w-[40px] h-[32px] max-sm:absolute max-sm:w-[25px] max-sm:h-[19px]" src="img/Burger.png" alt="Menu">
+    </div>
+
+    <!-- Main Content -->
+    <main class="h-[65%] flex flex-row pt-[70px] max-sm:pt-[40px]">
+        <!-- Side Dots (Desktop only) -->
+        <div class="pt-[50px] pl-[30px] max-lg:pt-[250px] max-lg:pl-[40px] max-sm:hidden">
+            <img class="w-[15px] h-[295px] max-lg:h-[369px] max-lg:w-[19px]" src="./img/bolinhas laterais.png" alt="Decoration dots">
+        </div>
+        
+        <!-- Product Info -->
+        <div class="pt-[30px] flex flex-col gap-[160px] pl-[40px] max-lg:pt-[150px] max-sm:pl-[0px] max-sm:pt-[50px]">
+            <div class="flex flex-row gap-[60px] pl-[60px] max-lg:flex-col max-lg:gap-[20px] max-sm:pl-[30px] max-sm:gap-0 max-sm:pt-[25px]">
+                <!-- Product Title -->
+                <div class="w-[279px] h-[122px] max-sm:h-[100px]">
+                    <div class="flex gap-3">
+                        <div class="font-extrabold pt-[10px] max-sm:hidden">__________________________________</div>
+                        <div class="font-extrabold pt-[0px] sm:hidden">___________________</div>
+                        <p class="font-bold text-[41px] max-sm:text-[24px]">OUT</p>
+                    </div>
+                    <p class="font-bold text-[41px] max-sm:text-[24px]">OF COMPETITION</p>
+                </div>
+                
+                <!-- Product Description -->
+                <div class="max-sm:hidden">
+                    <p class="w-[254px] h-[111px] font-normal text-[21px]">
+                        Stand out with the new Air Zoom G.T. Run, featuring a new cushioning in the heel.
+                    </p>
+                </div>
+                
+                <!-- Mobile Pre-order Button -->
+                <button class="bg-black hover:bg-gray-500 hover:text-black text-white text-[20px] w-[191px] h-[43px] flex gap-2 justify-center items-center lg:hidden max-sm:text-[16px] max-sm:w-[177px] max-sm:h-[34px]">
+                    PRE - ORDER  
+                    <img class="w-[74px] h-[12px]" src="./img/seta-pre-order.png" alt="Order now">
+                </button>
+            </div>
+            
+            <!-- Desktop Pre-order Button -->
+            <div>
+                <button class="bg-black hover:bg-gray-500 hover:text-black text-white text-[20px] w-[191px] h-[43px] flex gap-2 justify-center items-center max-lg:hidden">
+                    PRE - ORDER  
+                    <img class="w-[74px] h-[12px]" src="./img/seta-pre-order.png" alt="Order now">
+                </button>
+            </div>
+        </div>
+        
+        <!-- Product Image -->
+        <img class="absolute right-0 z-30 max-lg:pt-[400px] max-sm:pt-[250px] max-sm:w-[300px]" src="./img/tenis.png" alt="Nike Air Zoom G.T. Run">
     </main>
 
-    <img class="absolute right-0 top-[238px] z-30 w-[405px] h-[236px]" src="./Img/tenis.png" alt="Tênis Nike"> 
-
-    <footer class="h-[180px] flex items-center px-[69px] relative z-20">
-        <p class="font-normal text-[9px]">Copyright 2018 nike. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="h-[15%] pt-[70px] max-lg:flex max-lg:justify-center max-lg:pt-[280px] max-sm:pt-[140px] max-sm:justify-normal">
+        <p class="font-normal text-[16px] px-12 max-sm:text-[12px] max-sm:font-normal max-sm:px-[10px]">
+            Copyright 2018 nike. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>
